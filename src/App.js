@@ -1,10 +1,11 @@
 import React from "react";
+import Rotas from "./Rotas/Routes";
 
 function App() {
   return (
-    <div className="App">
-      <p>Costs</p>
-    </div>
+    <React.Fragment>
+      <Rotas/>
+    </React.Fragment>
   );
 }
 
