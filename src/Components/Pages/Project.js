@@ -14,6 +14,7 @@ export default function Project(){
     
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
+    const [showServiceForm, setShowServiceForm] = useState(false)
     const [message, setMessage] = useState()
     const [type, setType] = useState()
 
@@ -35,6 +36,7 @@ export default function Project(){
     }, [id])
 
     function editPost(project){
+        setMessage('')
         //budget validation
 
         if(project.budget < project.cost){
@@ -59,8 +61,12 @@ export default function Project(){
         .catch(err => console.log(err))
     }
 
-    function togleProjectForm() {
+    function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
+    }
+
+    function toggleServiceForm() {
+        setShowServiceForm(!showServiceForm)
     }
 
     return (
@@ -71,7 +77,7 @@ export default function Project(){
                         {message && <Message type={type} msg={message}/>}
                         <div className={styles.detail_conteiner}>
                             <h1>Projeto: {project.name}</h1>
-                            <button onClick={togleProjectForm} className={styles.btn}>
+                            <button onClick={toggleProjectForm} className={styles.btn}>
                                 {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
                             </button>
                             {!showProjectForm ? (
@@ -96,6 +102,25 @@ export default function Project(){
                                 </div>
                             )}
                         </div>
+                        <div className={styles.service_form_conteiner}>
+                            <h2>Adicione um serviço:</h2>
+                            <button onClick={toggleServiceForm} className={styles.btn}>
+                                {!showServiceForm ? 'Adicionar serviço' : 'Fechar'}
+                            </button>
+                            <div className={styles.project_info}>
+                                {showServiceForm && (
+                                    <div>
+                                        formulário do serviço
+                                    </div>
+                                )
+
+                                }
+                            </div>
+                        </div>
+                        <h2>Serviços</h2>
+                        <Conteiner customClass="start">
+                            <p>Itens de Serviços</p>
+                        </Conteiner>
                     </Conteiner>
                 </div>
             ): (
