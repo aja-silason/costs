@@ -34,11 +34,11 @@
       "id": 3
     },
     {
-      "name": "Udemy course",
-      "budget": "14500",
+      "name": "Curso de ReactJs",
+      "budget": "10500",
       "category": {
-        "id": "1",
-        "name": "infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
