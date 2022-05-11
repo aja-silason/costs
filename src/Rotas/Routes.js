@@ -7,6 +7,7 @@ import Company from '../Components/Pages/Company.js';
 import Contact from '../Components/Pages/Contact.js';
 import Home from '../Components/Pages/Home.js';
 import NewProject from '../Components/Pages/NewProject.js';
+import Project from '../Components/Pages/Project.js';
 import Projects from '../Components/Pages/Projects.js';
 
 
@@ -17,10 +18,11 @@ export default function Rotas() {
       <Conteiner customClass="min-height">
         <Routes>
             <Route exact path='/' element={<Home/>} />
-            <Route exact path='/projects' element={<Projects/>} />
-            <Route exact path='/company' element={<Company/>} />
-            <Route exact path='/contact' element={<Contact/>} />
-            <Route exact path='/newproject' element={<NewProject/>} />
+            <Route  path='/projects' element={<Projects/>} />
+            <Route  path='/company' element={<Company/>} />
+            <Route  path='/contact' element={<Contact/>} />
+            <Route  path='/newproject' element={<NewProject/>} />
+            <Route  path='/project/:id' element={<Project/>} />
         </Routes>
       </Conteiner>
       <Rodape/>
