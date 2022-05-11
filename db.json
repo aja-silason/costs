@@ -45,17 +45,6 @@
       "id": 4
     },
     {
-      "name": "Soft curso",
-      "budget": "1000",
-      "category": {
-        "id": "4",
-        "name": "Planeamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
       "name": "AjaSoft curso",
       "budget": "5000",
       "category": {
@@ -65,17 +54,6 @@
       "cost": 0,
       "services": [],
       "id": 6
-    },
-    {
-      "name": "ELO",
-      "budget": "25000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
     },
     {
       "name": "ALURA",
