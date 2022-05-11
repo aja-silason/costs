@@ -87,6 +87,17 @@
       "cost": 0,
       "services": [],
       "id": 8
+    },
+    {
+      "name": "Startup AJASoft",
+      "budget": "25000",
+      "category": {
+        "id": "1",
+        "name": "infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 9
     }
   ],
   "categories": [
